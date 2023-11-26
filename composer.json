@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Alayubi\\LaravelInvoice\\": "src/"
+            "Alayubi\\Invoice\\": "src/"
         }
     },
     "authors": [
@@ -14,5 +14,12 @@
             "email": "shalahuddinalayubi24@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alayubi\\Invoice\\InvoiceServiceProvider"
+            ]
+        }
+    }
 }
